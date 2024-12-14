@@ -1,0 +1,325 @@
+/* Apply a gradient background to the whole page */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0e8ac8, #b80d5f,#0b701a); /* Gradient background */
+  color: #ffffff;
+}
+
+
+/* Header styling */
+header {
+  background: rgb(113 69 111 / 65%);
+  padding: 15px 0;
+}
+
+header .inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+header .logo {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
+}
+header nav img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 40rem;
+  display: flex;
+}
+
+header ul li {
+  position: relative;
+}
+
+header ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+header ul li a:hover{
+  background-color: #122112;
+  color: #b80d5f;
+}
+
+header ul li ul {
+  display: none;
+  position: absolute;
+  background: rgba(51, 62, 50, 0.9);
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header ul li:hover ul {
+  display: block;
+  
+}
+
+header ul li ul li a {
+  padding: 10px 20px;
+  color: #fff;
+}
+
+/* Flip card styling */
+.flip {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.flip-card {
+  background-color: #ffffff;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  border-radius: 51%;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  border-radius: 51%;
+}
+
+.flip-card-front img{
+  border-radius: 51%;
+  object-fit: contain;
+
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.flip-card-back {
+  background-color: #ff5722;
+  color: white;
+  text-align: center;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 444px;
+}
+
+/* Top container styling */
+.top-container {
+  text-align: center;
+  padding: 50px;
+  color: #fff;
+}
+
+.top-container h2 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.top-container span {
+  font-size: 24px;
+}
+
+/* Profile section styling */
+.profile {
+  text-align: center;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 600px;
+  border-radius: 8px;
+}
+p:hover{
+  color:orangered
+}
+h1:hover{
+  color:orangered
+}
+h2:hover{
+  color:orangered
+}
+h3:hover{
+  color:orangered
+}
+h4:hover{
+  color:orangered
+}
+span:hover{
+  color:orangered
+}
+.profile h2 {
+  margin: 0;
+  color: #00000000;
+}
+
+.profile span {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+/* Middle container styling */
+.middle-container {
+  padding: 50px;
+  text-align: center;
+}
+
+.middle-container h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.middle-container .intro {
+  text-align: center;
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  margin-left: 27rem;
+}
+
+.middle-container hr {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 30px 0;
+}
+
+/* Skills section styling */
+.skills {
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.skills #span {
+  font-size: 32px;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.skill-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+.skill-row img {
+  width: 312px;
+  height: 300px;
+  margin-right: 20px;
+  object-fit: cover;
+  border-radius: 150px;
+
+}
+
+.skill-row h3 {
+  margin: 15px;
+  color: #ffffff;
+}
+
+.skill-row p {
+  margin: 0;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+/* Contact section styling */
+.contact-me {
+  padding: 50px;
+  text-align: center;
+}
+
+.contact-me h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.contact-me h3 {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.contact-message {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.contact-me .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ff5722;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.contact-me .btn:hover {
+  background: #e64a19;
+}
+
+/* Bottom container styling */
+.bottom-container {
+  padding: 20px;
+  text-align: center;
+  
+}
+
+.bottom-container a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.bottom-container a:hover {
+  text-decoration: underline;
+}
+
+.bottom-container p {
+  margin: 10px 0 0;
+  color: #ffffff;
+}
