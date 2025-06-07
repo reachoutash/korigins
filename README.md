@@ -1,6 +1,6 @@
 # desxash(myProtfolio)
 https://desxash.netlify.app/
 
-Hi there, I Ashwani Tripati 
+Hi there, I Ashwani Tripathi 
 Contributes in live application projects
 Reach me out at: ashwanisviit@gmail.com
